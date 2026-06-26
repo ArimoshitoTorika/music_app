@@ -8,11 +8,9 @@ import 'HomePage.dart';
 
 void main() {
   runApp(
-    DevicePreview(
-      builder: (context) => MaterialApp(
+     MaterialApp(
         debugShowCheckedModeBanner: false,
         useInheritedMediaQuery: true,
-        locale: DevicePreview.locale(context),
         localizationsDelegates: const [
           GlobalMaterialLocalizations.delegate,
           GlobalWidgetsLocalizations.delegate,
@@ -21,7 +19,6 @@ void main() {
         supportedLocales: const [Locale('en')],
         home: const loginPage(),
       ),
-    ),
   );
 }
 
