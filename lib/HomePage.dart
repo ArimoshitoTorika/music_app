@@ -6,8 +6,10 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    String _tayler = 'https://imgs.search.brave.com/N0yVqL9CBQLGMT8w_defW_HhmNyFQWFLhRSc-SFNjGM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/aW5kaWVncm91bmQu/bmV0L2ltYWdlcy9i/bG9nLzIwMjQvaW5k/aWVibG9nLWJlc3Qt/YWxidW0tY292ZXJz/LTIwMTBzLTA3Lmpw/Zw';
-    String _daftpunk = 'https://imgs.search.brave.com/hpZyEhc8lWggKMDydMv4DM_E1lacVNBBAUM4eQc-zgc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/aW5kaWVncm91bmQu/bmV0L2ltYWdlcy9i/bG9nLzIwMjQvaW5k/aWVibG9nLWJlc3Qt/YWxidW0tY292ZXJz/LTIwMTBzLTQ5Lmpw/Zw';
+    String _tayler =
+        'https://imgs.search.brave.com/N0yVqL9CBQLGMT8w_defW_HhmNyFQWFLhRSc-SFNjGM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/aW5kaWVncm91bmQu/bmV0L2ltYWdlcy9i/bG9nLzIwMjQvaW5k/aWVibG9nLWJlc3Qt/YWxidW0tY292ZXJz/LTIwMTBzLTA3Lmpw/Zw';
+    String _daftpunk =
+        'https://imgs.search.brave.com/hpZyEhc8lWggKMDydMv4DM_E1lacVNBBAUM4eQc-zgc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/aW5kaWVncm91bmQu/bmV0L2ltYWdlcy9i/bG9nLzIwMjQvaW5k/aWVibG9nLWJlc3Qt/YWxidW0tY292ZXJz/LTIwMTBzLTQ5Lmpw/Zw';
     void _ggg() {}
     void _goToSearch() {
       Navigator.pushReplacement(
@@ -109,7 +111,7 @@ class HomePage extends StatelessWidget {
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
-                  SizedBox(height: 10,),
+                  SizedBox(height: 10),
                   Row(
                     // crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
@@ -126,12 +128,17 @@ class HomePage extends StatelessWidget {
                           children: [
                             ClipRRect(
                               borderRadius: BorderRadius.circular(8),
-                              child: Image.network(
-                                _tayler,
-                              ),
+                              child: Image.network(_tayler),
                             ),
                             SizedBox(width: 10),
-                            Text("ABC Mix",style: TextStyle(color: Colors.white,fontSize: 14,fontWeight: FontWeight(500),),)
+                            Text(
+                              "ABC Mix",
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 14,
+                                fontWeight: FontWeight(500),
+                              ),
+                            ),
                           ],
                         ),
                       ),
@@ -147,165 +154,252 @@ class HomePage extends StatelessWidget {
                           children: [
                             ClipRRect(
                               borderRadius: BorderRadius.circular(8),
-                              child: Image.network(
-                                _daftpunk
-                              ),
+                              child: Image.network(_daftpunk),
                             ),
                             SizedBox(width: 5),
-                            Text("POP Mix",style: TextStyle(color: Colors.white,fontSize: 14,fontWeight: FontWeight(500),),),
-                          ],
-                        ),
-                      ),
-                    ],
-                  ),SizedBox(height: 10,),
-                  Row(
-                    // crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      SizedBox(width: 20),
-                      Container(
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(8),
-                          color: Colors.grey.withAlpha(50),
-                        ),
-                        width: 185,
-                        height: 60,
-
-                        child: Row(
-                          children: [
-                            ClipRRect(
-                              borderRadius: BorderRadius.circular(8),
-                              child: Image.network(
-                                _tayler,
+                            Text(
+                              "POP Mix",
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 14,
+                                fontWeight: FontWeight(500),
                               ),
                             ),
-                            SizedBox(width: 10),
-                            Text("ABC Mix",style: TextStyle(color: Colors.white,fontSize: 14,fontWeight: FontWeight(500),),)
-                          ],
-                        ),
-                      ),
-                      SizedBox(width: 10),
-                      Container(
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(8),
-                          color: Colors.grey.withAlpha(50),
-                        ),
-                        width: 185,
-                        height: 60,
-                        child: Row(
-                          children: [
-                            ClipRRect(
-                              borderRadius: BorderRadius.circular(8),
-                              child: Image.network(
-                                _daftpunk
-                              ),
-                            ),
-                            SizedBox(width: 5),
-                            Text("POP Mix",style: TextStyle(color: Colors.white,fontSize: 14,fontWeight: FontWeight(500),),),
-                          ],
-                        ),
-                      ),
-                    ],
-                  ),SizedBox(height: 10,),
-                  Row(
-                    // crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      SizedBox(width: 20),
-                      Container(
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(8),
-                          color: Colors.grey.withAlpha(50),
-                        ),
-                        width: 185,
-                        height: 60,
-
-                        child: Row(
-                          children: [
-                            ClipRRect(
-                              borderRadius: BorderRadius.circular(8),
-                              child: Image.network(
-                                _tayler,
-                              ),
-                            ),
-                            SizedBox(width: 10),
-                            Text("ABC Mix",style: TextStyle(color: Colors.white,fontSize: 14,fontWeight: FontWeight(500),),)
-                          ],
-                        ),
-                      ),
-                      SizedBox(width: 10),
-                      Container(
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(8),
-                          color: Colors.grey.withAlpha(50),
-                        ),
-                        width: 185,
-                        height: 60,
-                        child: Row(
-                          children: [
-                            ClipRRect(
-                              borderRadius: BorderRadius.circular(8),
-                              child: Image.network(
-                                _daftpunk
-                              ),
-                            ),
-                            SizedBox(width: 5),
-                            Text("POP Mix",style: TextStyle(color: Colors.white,fontSize: 14,fontWeight: FontWeight(500),),),
-                          ],
-                        ),
-                      ),
-                    ],
-                  ),SizedBox(height: 10,),
-                  Row(
-                    // crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      SizedBox(width: 20),
-                      Container(
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(8),
-                          color: Colors.grey.withAlpha(50),
-                        ),
-                        width: 185,
-                        height: 60,
-
-                        child: Row(
-                          children: [
-                            ClipRRect(
-                              borderRadius: BorderRadius.circular(8),
-                              child: Image.network(
-                                _tayler,
-                              ),
-                            ),
-                            SizedBox(width: 10),
-                            Text("ABC Mix",style: TextStyle(color: Colors.white,fontSize: 14,fontWeight: FontWeight(500),),)
-                          ],
-                        ),
-                      ),
-                      SizedBox(width: 10),
-                      Container(
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(8),
-                          color: Colors.grey.withAlpha(50),
-                        ),
-                        width: 185,
-                        height: 60,
-                        child: Row(
-                          children: [
-                            ClipRRect(
-                              borderRadius: BorderRadius.circular(8),
-                              child: Image.network(
-                                _daftpunk
-                              ),
-                            ),
-                            SizedBox(width: 5),
-                            Text("POP Mix",style: TextStyle(color: Colors.white,fontSize: 14,fontWeight: FontWeight(500),),),
                           ],
                         ),
                       ),
                     ],
                   ),
-                  SizedBox(height: 20,),
+                  SizedBox(height: 10),
                   Row(
-                    children: [SizedBox(width: 20,),Text("Recommended Stations",style: TextStyle(color: Colors.white,fontSize: 24),)],
-                  )
+                    // crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      SizedBox(width: 20),
+                      Container(
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(8),
+                          color: Colors.grey.withAlpha(50),
+                        ),
+                        width: 185,
+                        height: 60,
+
+                        child: Row(
+                          children: [
+                            ClipRRect(
+                              borderRadius: BorderRadius.circular(8),
+                              child: Image.network(_tayler),
+                            ),
+                            SizedBox(width: 10),
+                            Text(
+                              "ABC Mix",
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 14,
+                                fontWeight: FontWeight(500),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                      SizedBox(width: 10),
+                      Container(
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(8),
+                          color: Colors.grey.withAlpha(50),
+                        ),
+                        width: 185,
+                        height: 60,
+                        child: Row(
+                          children: [
+                            ClipRRect(
+                              borderRadius: BorderRadius.circular(8),
+                              child: Image.network(_daftpunk),
+                            ),
+                            SizedBox(width: 5),
+                            Text(
+                              "POP Mix",
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 14,
+                                fontWeight: FontWeight(500),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ],
+                  ),
+                  SizedBox(height: 10),
+                  Row(
+                    // crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      SizedBox(width: 20),
+                      Container(
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(8),
+                          color: Colors.grey.withAlpha(50),
+                        ),
+                        width: 185,
+                        height: 60,
+
+                        child: Row(
+                          children: [
+                            ClipRRect(
+                              borderRadius: BorderRadius.circular(8),
+                              child: Image.network(_tayler),
+                            ),
+                            SizedBox(width: 10),
+                            Text(
+                              "ABC Mix",
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 14,
+                                fontWeight: FontWeight(500),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                      SizedBox(width: 10),
+                      Container(
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(8),
+                          color: Colors.grey.withAlpha(50),
+                        ),
+                        width: 185,
+                        height: 60,
+                        child: Row(
+                          children: [
+                            ClipRRect(
+                              borderRadius: BorderRadius.circular(8),
+                              child: Image.network(_daftpunk),
+                            ),
+                            SizedBox(width: 5),
+                            Text(
+                              "POP Mix",
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 14,
+                                fontWeight: FontWeight(500),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ],
+                  ),
+                  SizedBox(height: 10),
+                  Row(
+                    // crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      SizedBox(width: 20),
+                      Container(
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(8),
+                          color: Colors.grey.withAlpha(50),
+                        ),
+                        width: 185,
+                        height: 60,
+
+                        child: Row(
+                          children: [
+                            ClipRRect(
+                              borderRadius: BorderRadius.circular(8),
+                              child: Image.network(_tayler),
+                            ),
+                            SizedBox(width: 10),
+                            Text(
+                              "ABC Mix",
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 14,
+                                fontWeight: FontWeight(500),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                      SizedBox(width: 10),
+                      Container(
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(8),
+                          color: Colors.grey.withAlpha(50),
+                        ),
+                        width: 185,
+                        height: 60,
+                        child: Row(
+                          children: [
+                            ClipRRect(
+                              borderRadius: BorderRadius.circular(8),
+                              child: Image.network(_daftpunk),
+                            ),
+                            SizedBox(width: 5),
+                            Text(
+                              "POP Mix",
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 14,
+                                fontWeight: FontWeight(500),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ],
+                  ),
+                  SizedBox(height: 30),
+                  Row(
+                    children: [
+                      SizedBox(width: 20),
+                      Text(
+                        "Recommended Stations",
+                        style: TextStyle(color: Colors.white, fontSize: 22),
+                      ),
+                    ],
+                  ),
+                  SizedBox(height: 30),
+                  SingleChildScrollView(
+                    scrollDirection: Axis.horizontal,
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.start,
+                      children: [
+                        SizedBox(width: 20),
+                        SizedBox(
+                          height: 200,
+                          width: 160,
+                          child: Column(
+                            children: [
+                              Container(
+                                decoration: BoxDecoration(
+                                  color: Colors.green,
+                                  borderRadius: BorderRadius.circular(8),
+                                ),
+                                height: 160,
+                                width: 160,
+                                child: Stack(
+                                  children: [
+                                    Text("data"),
+                                    Center(
+                                      child: Image.network(
+                                        _daftpunk,
+                                        width: 40,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                              Text(
+                                "ABJBJBsf, dshfbsjdbfsd, dsdjfnsdkdbfdsbfjsbdfjbsdnfsdfs",
+                                maxLines: 2,
+                                overflow: TextOverflow.ellipsis,
+                                style: TextStyle(color: Colors.white),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
                 ],
               ),
             ),
@@ -373,7 +467,6 @@ class HomePage extends StatelessWidget {
               ],
             ),
             SizedBox(height: 20),
-
           ],
         ),
       ),
