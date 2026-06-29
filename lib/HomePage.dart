@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:music_app/Search.dart';
+import 'package:music_app/Widgets/home_rcmd_card.dart';
 import 'package:music_app/Widgets/home_recent_card.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -11,6 +13,8 @@ class HomePage extends StatelessWidget {
         'https://imgs.search.brave.com/N0yVqL9CBQLGMT8w_defW_HhmNyFQWFLhRSc-SFNjGM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/aW5kaWVncm91bmQu/bmV0L2ltYWdlcy9i/bG9nLzIwMjQvaW5k/aWVibG9nLWJlc3Qt/YWxidW0tY292ZXJz/LTIwMTBzLTA3Lmpw/Zw';
     String _daftpunk =
         'https://imgs.search.brave.com/hpZyEhc8lWggKMDydMv4DM_E1lacVNBBAUM4eQc-zgc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly93d3cu/aW5kaWVncm91bmQu/bmV0L2ltYWdlcy9i/bG9nLzIwMjQvaW5k/aWVibG9nLWJlc3Qt/YWxidW0tY292ZXJz/LTIwMTBzLTQ5Lmpw/Zw';
+    String _rex =
+        'https://imgs.search.brave.com/uaJKYn6bUGFtsNnm6z4OCkZjK9dP1T4tnPMyNkxPedE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/c29uZW1pYy5uZXQv/aS82MDAvdy81MDlj/Njk5NWE0ZDE1Yjc2/YTk4OTk5ZjliYjdl/ZDc2Yi8xNDM0OTQw/OS9yZXgtb3Jhbmdl/LWNvdW50eS1wb255/LWNvdmVyLWFydC5q/cGc';
     void _ggg() {}
     void _goToSearch() {
       Navigator.pushReplacement(
@@ -118,7 +122,21 @@ class HomePage extends StatelessWidget {
                       SizedBox(width: 20),
                       HomeRecentCard(cardImage: _tayler, cardTitle: "Test"),
                       SizedBox(width: 10),
-                      HomeRecentCard(cardImage: _daftpunk, cardTitle: "Daft Punk",
+                      HomeRecentCard(
+                        cardImage: _daftpunk,
+                        cardTitle: "Daft Punk",
+                      ),
+                    ],
+                  ),
+                  SizedBox(height: 10),
+                  Row(
+                    children: [
+                      SizedBox(width: 20),
+                      HomeRecentCard(cardImage: _rex, cardTitle: "Test"),
+                      SizedBox(width: 10),
+                      HomeRecentCard(
+                        cardImage: _daftpunk,
+                        cardTitle: "Daft Punk",
                       ),
                     ],
                   ),
@@ -128,7 +146,9 @@ class HomePage extends StatelessWidget {
                       SizedBox(width: 20),
                       HomeRecentCard(cardImage: _tayler, cardTitle: "Test"),
                       SizedBox(width: 10),
-                      HomeRecentCard(cardImage: _daftpunk, cardTitle: "Daft Punk",
+                      HomeRecentCard(
+                        cardImage: _daftpunk,
+                        cardTitle: "Daft Punk",
                       ),
                     ],
                   ),
@@ -138,21 +158,12 @@ class HomePage extends StatelessWidget {
                       SizedBox(width: 20),
                       HomeRecentCard(cardImage: _tayler, cardTitle: "Test"),
                       SizedBox(width: 10),
-                      HomeRecentCard(cardImage: _daftpunk, cardTitle: "Daft Punk",
+                      HomeRecentCard(
+                        cardImage: _daftpunk,
+                        cardTitle: "Daft Punk",
                       ),
                     ],
                   ),
-                  SizedBox(height: 10),
-                  Row(
-                    children: [
-                      SizedBox(width: 20),
-                      HomeRecentCard(cardImage: _tayler, cardTitle: "Test"),
-                      SizedBox(width: 10),
-                      HomeRecentCard(cardImage: _daftpunk, cardTitle: "Daft Punk",
-                      ),
-                    ],
-                  ),
-                  SizedBox(height: 10),
                   SizedBox(height: 30),
                   Row(
                     children: [
@@ -170,161 +181,40 @@ class HomePage extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.start,
                       children: [
                         SizedBox(width: 20),
-                        SizedBox(
-                          height: 200,
-                          width: 160,
-                          child: Column(
-                            children: [
-                              Container(
-                                decoration: BoxDecoration(
-                                  color: Colors.green,
-                                  borderRadius: BorderRadius.circular(8),
-                                ),
-                                height: 160,
-                                width: 160,
-                                child: Stack(
-                                  children: [
-                                    Text("data"),
-                                    Center(
-                                      child: Image.network(
-                                        _daftpunk,
-                                        width: 40,
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              ),
-                              Text(
-                                "Laufey, Rex Orange County, Beabadoobe, The Marias, Tayler ,The Creator",
-                                maxLines: 2,
-                                overflow: TextOverflow.ellipsis,
-                                style: TextStyle(color: Colors.white),
-                              ),
-                            ],
-                          ),
+                        HomeRcmdCard(
+                          songTitle: "Hell everyone I'm nig",
+                          leftImage: _rex,
+                          centerImage: _tayler,
+                          rightImage: _daftpunk,
+                          title: "Rex Orange County, Tayler ,The creator",
+                          bgColor: Colors.blue,
                         ),
                         SizedBox(width: 20),
-                        SizedBox(
-                          height: 200,
-                          width: 160,
-                          child: Column(
-                            children: [
-                              Container(
-                                decoration: BoxDecoration(
-                                  color: Colors.green,
-                                  borderRadius: BorderRadius.circular(8),
-                                ),
-                                height: 160,
-                                width: 160,
-                                child: Stack(
-                                  children: [
-                                    Text("data"),
-                                    Padding(
-                                      padding: const EdgeInsets.only(
-                                        top: 50,
-                                        left: 0,
-                                        right: 65,
-                                        bottom: 50,
-                                      ),
-                                      child: ClipRRect(
-                                        borderRadius: BorderRadius.circular(
-                                          100,
-                                        ),
-                                        child: Image.network(
-                                          _daftpunk,
-                                          fit: BoxFit.cover,
-                                        ),
-                                      ),
-                                    ),
-                                    Padding(
-                                      padding: const EdgeInsets.only(
-                                        top: 35,
-                                        left: 35,
-                                        right: 35,
-                                      ),
-                                      child: ClipRRect(
-                                        borderRadius: BorderRadius.circular(
-                                          100,
-                                        ),
-                                        child: Image.network(_tayler),
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              ),
-                              Text(
-                                "Laufey, Rex Orange County, Beabadoobe, The Marias, Tayler ,The Creator",
-                                maxLines: 2,
-                                overflow: TextOverflow.ellipsis,
-                                style: TextStyle(color: Colors.white),
-                              ),
-                            ],
-                          ),
+                        HomeRcmdCard(
+                          songTitle: "Hell everyone I'm nig",
+                          leftImage: _daftpunk,
+                          centerImage: _rex,
+                          rightImage: _tayler,
+                          title: "Rex Orange County, Tayler ,The creator",
+                          bgColor: Colors.orange,
                         ),
                         SizedBox(width: 20),
-                        SizedBox(
-                          height: 200,
-                          width: 160,
-                          child: Column(
-                            children: [
-                              Container(
-                                decoration: BoxDecoration(
-                                  color: Colors.green,
-                                  borderRadius: BorderRadius.circular(8),
-                                ),
-                                height: 160,
-                                width: 160,
-                                child: Stack(
-                                  children: [
-                                    Text("data"),
-                                    Center(
-                                      child: Image.network(_tayler, width: 40),
-                                    ),
-                                  ],
-                                ),
-                              ),
-                              Text(
-                                "Laufey, Rex Orange County, Beabadoobe, The Marias, Tayler ,The Creator",
-                                maxLines: 2,
-                                overflow: TextOverflow.ellipsis,
-                                style: TextStyle(color: Colors.white),
-                              ),
-                            ],
-                          ),
+                        HomeRcmdCard(
+                          songTitle: "Hell everyone I'm nig",
+                          leftImage: _daftpunk,
+                          centerImage: _tayler,
+                          rightImage: _daftpunk,
+                          title: "Rex Orange County, Tayler ,The creator",
+                          bgColor: Colors.purple,
                         ),
                         SizedBox(width: 20),
-                        SizedBox(
-                          height: 200,
-                          width: 160,
-                          child: Column(
-                            children: [
-                              Container(
-                                decoration: BoxDecoration(
-                                  color: Colors.green,
-                                  borderRadius: BorderRadius.circular(8),
-                                ),
-                                height: 160,
-                                width: 160,
-                                child: Stack(
-                                  children: [
-                                    Text("data"),
-                                    Center(
-                                      child: Image.network(
-                                        _daftpunk,
-                                        width: 40,
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                              ),
-                              Text(
-                                "Laufey, Rex Orange County, Beabadoobe, The Marias, Tayler ,The Creator",
-                                maxLines: 2,
-                                overflow: TextOverflow.ellipsis,
-                                style: TextStyle(color: Colors.white),
-                              ),
-                            ],
-                          ),
+                        HomeRcmdCard(
+                          songTitle: "Hell everyone I'm nig",
+                          leftImage: _daftpunk,
+                          centerImage: _tayler,
+                          rightImage: _daftpunk,
+                          title: "Rex Orange County, Tayler ,The creator",
+                          bgColor: Colors.blue,
                         ),
                       ],
                     ),

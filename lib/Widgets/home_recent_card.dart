@@ -9,7 +9,7 @@ class HomeRecentCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(8),
+        borderRadius: BorderRadius.circular(6),
         color: Colors.grey.withAlpha(50),
       ),
       width: 185,
